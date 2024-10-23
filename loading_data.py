@@ -4,7 +4,7 @@ import os
 def load_json_file():
     folder_name=input('Enter folder name where JSON file is located: ')
     file_name= 'sai_varshith_meka_adoptions.json'
-    file_location= "C:/Users/varsh/Desktop/sd_repositaries/files_assignment/sai_varshith_meka_adoptions.json"
+    file_location= os.path.join(folder_name,file_name)
     try:
         with open(file_location, 'r') as file:
             data = json.load(file)
